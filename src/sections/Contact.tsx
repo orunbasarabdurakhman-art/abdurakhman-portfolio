@@ -17,11 +17,11 @@ export function Contact() {
         <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-neon-blue/15 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 left-10 h-56 w-56 rounded-full bg-neon-purple/15 blur-3xl" />
 
-        <SectionHeading kicker="06 / Contact" title="Let's Build Something" />
+        <SectionHeading kicker="06 / Contact" title="Бірге жасайық" />
 
         <Reveal>
           <p className="max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
-            Have an idea, project or challenge? Let&apos;s connect and build something interesting.
+            Идея, жоба немесе міндет бар ма? Байланысайық та, қызықты нәрсе жасайық.
           </p>
         </Reveal>
 

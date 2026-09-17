@@ -5,7 +5,7 @@ import { journey } from '../data/content';
 export function Journey() {
   return (
     <section id="journey" className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
-      <SectionHeading kicker="04 / Path" title="Journey" />
+      <SectionHeading kicker="04 / Path" title="Жолы" />
 
       <div className="relative ml-2 border-l border-white/10 pl-8 sm:ml-4 sm:pl-12">
         <div className="absolute bottom-0 left-[-1px] top-0 w-px bg-gradient-to-b from-neon-blue via-neon-purple to-transparent" />

@@ -21,15 +21,15 @@ const skillIcons = {
   JavaScript: Braces,
   Git: GitBranch,
   GitHub: Github,
-  'AI Tools': Sparkles,
-  'Problem Solving': Brain,
-  Algorithms: Binary,
+  'AI құралдары': Sparkles,
+  'Мәселені шешу': Brain,
+  Алгоритмдер: Binary,
 } as const;
 
 const levelStyles: Record<SkillLevel, string> = {
-  Learning: 'border-sky-400/25 bg-sky-400/10 text-sky-200',
-  Developing: 'border-violet-400/25 bg-violet-400/10 text-violet-200',
-  Familiar: 'border-teal-400/25 bg-teal-400/10 text-teal-200',
+  Үйрену: 'border-sky-400/25 bg-sky-400/10 text-sky-200',
+  Дамыту: 'border-violet-400/25 bg-violet-400/10 text-violet-200',
+  Таныс: 'border-teal-400/25 bg-teal-400/10 text-teal-200',
 };
 
 export function Skills() {
@@ -37,12 +37,12 @@ export function Skills() {
     <section id="skills" className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
       <SectionHeading
         kicker="02 / Skills"
-        title="What I'm building"
-        description="Honest progress — not a fake expert stack. These are the tools and ways of thinking I practice every week."
+        title="Немен жұмыс істеп жатырмын"
+        description="Шынайы прогресс — жалған сарапшы стегі емес. Бұл мен апта сайын жаттықтыратын құралдар мен ойлау тәсілдері."
       />
 
       <div className="mb-8 flex flex-wrap gap-2">
-        {(['Learning', 'Developing', 'Familiar'] as SkillLevel[]).map((level) => (
+        {(['Үйрену', 'Дамыту', 'Таныс'] as SkillLevel[]).map((level) => (
           <span
             key={level}
             className={cn('rounded-full border px-3 py-1 text-xs', levelStyles[level])}
@@ -80,9 +80,9 @@ export function Skills() {
                   <div
                     className={cn(
                       'h-full rounded-full bg-gradient-to-r from-neon-blue to-neon-purple',
-                      skill.level === 'Developing' && 'w-2/3',
-                      skill.level === 'Learning' && 'w-2/5',
-                      skill.level === 'Familiar' && 'w-1/2',
+                      skill.level === 'Дамыту' && 'w-2/3',
+                      skill.level === 'Үйрену' && 'w-2/5',
+                      skill.level === 'Таныс' && 'w-1/2',
                     )}
                   />
                 </div>

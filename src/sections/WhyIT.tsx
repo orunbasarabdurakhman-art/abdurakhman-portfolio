@@ -10,8 +10,8 @@ export function WhyIT() {
     <section id="why-it" className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
       <SectionHeading
         kicker="05 / Motive"
-        title="Why IT?"
-        description="I chose information technology because it combines curiosity, logic and the chance to make something useful."
+        title="Неге IT?"
+        description="Ақпараттық технологияны таңдадым, себебі ол қызығушылықты, логиканы және пайдалы нәрсе жасау мүмкіндігін біріктіреді."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -9,7 +9,7 @@ export function StatusBadge({ compact = false }: { compact?: boolean }) {
         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-300 opacity-60" />
         <span className="relative inline-flex h-2 w-2 rounded-full bg-neon-mint status-ring" />
       </span>
-      Currently learning
+      Қазір үйреніп жатырмын
     </span>
   );
 }

@@ -14,10 +14,10 @@ const SCRIPT: Line[] = [
   { kind: 'output', value: '16' },
   { kind: 'blank' },
   { kind: 'command', value: 'school' },
-  { kind: 'output', value: 'Ibilim High School' },
+  { kind: 'output', value: 'Ibilim мектебі' },
   { kind: 'blank' },
   { kind: 'command', value: 'focus' },
-  { kind: 'output', value: 'Programming + IT' },
+  { kind: 'output', value: 'Бағдарламалау + IT' },
 ];
 
 function lineText(line: Line) {
@@ -63,7 +63,7 @@ export function TerminalCard() {
 
   return (
     <aside
-      className="glass scanline relative w-full max-w-md overflow-hidden rounded-2xl shadow-glow"
+      className="glass scanline relative w-full overflow-hidden rounded-2xl shadow-glow"
       aria-label="Developer terminal"
     >
       <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
@@ -72,7 +72,7 @@ export function TerminalCard() {
         <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
         <p className="ml-2 truncate font-mono text-[11px] text-slate-400">abdurakhman — zsh</p>
       </div>
-      <pre className="min-h-[280px] whitespace-pre-wrap px-5 py-5 font-mono text-[13px] leading-7 text-slate-200 sm:min-h-[300px] sm:text-sm">
+      <pre className="min-h-[220px] whitespace-pre-wrap px-5 py-4 font-mono text-[13px] leading-7 text-slate-200 sm:text-sm">
         {visible.split('\n').map((line, index, all) => {
           const isLast = index === all.length - 1;
           const isCommand = line.startsWith('$ ');

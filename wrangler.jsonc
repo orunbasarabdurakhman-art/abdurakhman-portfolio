@@ -2,5 +2,14 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "abdurakhman-portfolio",
   "compatibility_date": "2026-09-17",
-  "pages_build_output_dir": "./dist"
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "build": {
+    "command": "npm install && npm run build"
+  },
+  "observability": {
+    "enabled": true
+  }
 }

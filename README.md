@@ -26,15 +26,20 @@ npm run build
 npm run preview
 ```
 
-## Deploy to Cloudflare Pages (Mac zsh)
+## Deploy to Cloudflare (Workers)
+
+Dashboard settings:
+
+- **Build command:** `npm ci && npm run build`
+- **Deploy command:** `npx wrangler deploy`
+
+Or from a Mac zsh terminal:
 
 ```zsh
 npm install
 npx wrangler login
 npm run deploy
 ```
-
-`wrangler login` opens the browser once. After that, the site goes live on `*.pages.dev`.
 
 ## Edit content
 

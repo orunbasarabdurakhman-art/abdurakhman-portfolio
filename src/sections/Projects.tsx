@@ -8,8 +8,8 @@ export function Projects() {
     <section id="projects" className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
       <SectionHeading
         kicker="03 / Work"
-        title="Featured Projects"
-        description="A mix of concepts and practice work. Cards are ready for real repos — swap the placeholders when the code goes public."
+        title="Таңдаулы жобалар"
+        description="Концепт пен практиканың қоспасы. Карточкалар нақты репозиторийлерге дайын — код жарияланғанда placeholder-ларды ауыстыруға болады."
       />
 
       <div className="grid gap-5 lg:grid-cols-3">
@@ -65,7 +65,7 @@ export function Projects() {
                     </a>
                   ) : (
                     <span className="inline-flex flex-1 items-center justify-center rounded-xl border border-white/5 px-3 py-2.5 text-sm text-slate-500">
-                      Demo soon
+                      Демо жақында
                     </span>
                   )}
                 </div>
