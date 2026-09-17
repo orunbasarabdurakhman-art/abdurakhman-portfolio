@@ -26,6 +26,16 @@ npm run build
 npm run preview
 ```
 
+## Deploy to Cloudflare Pages (Mac zsh)
+
+```zsh
+npm install
+npx wrangler login
+npm run deploy
+```
+
+`wrangler login` opens the browser once. After that, the site goes live on `*.pages.dev`.
+
 ## Edit content
 
 Profile details, skills, projects and contact placeholders live in `src/data/content.ts`.
